@@ -15,7 +15,6 @@ Requirements
 ------------
   - Git
   - Node.js v6.x.x
----
 
 Installation Instructions
 -------------------------
