@@ -6,6 +6,7 @@ const mapStateToProps = state => ({
     board: state.getIn(['core', 'board'])
 });
 
+
 const mapDispatchToProps = dispatch => ({
     drawAt: (cell) => {
         dispatch(writeAtCell(cell));

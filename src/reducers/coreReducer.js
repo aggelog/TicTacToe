@@ -109,7 +109,7 @@ function writeAtCell(state, playedCell) {
     return newState;
 }
 
-export default (state = new Map(), action = { type: 'UNKNOWN' }) => {
+export default (state = new Map(), action) => {
     switch (action.type) {
         case RESTART_GAME:
         case SET_INITIAL_STATE:

@@ -11,3 +11,4 @@ npm-debug.log
 /cfg
 .nyc_output
 /coverage
+/package.json

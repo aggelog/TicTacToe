@@ -18,7 +18,7 @@
     "cover": "nyc npm run test",
     "check-coverage": "nyc check-coverage --statements 1 --branches 1 --functions 1 --lines 1",
     "test": "ava --tap | tap-nyan",
-    "test:watch": "ava --watch",
+    "test:watch": "./node_modules/.bin/ava --watch",
     "cover:watch": "nodemon --quiet --watch test --exec nyc ava -s",
     "clean": "node run clean && rm -rf node_modules && rm -rf .nyc_output && rm -rf coverage"
   },

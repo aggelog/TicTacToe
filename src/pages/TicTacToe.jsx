@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setState } from '../actions/coreActions';
 import ScoreListContainer from '../components/TicTacToe/ScoreListContainer';
-import TicTacBoardContainer from '../components/TicTacToe/TIcTacBoardContainer';
+import TicTacBoardContainer from '../components/TicTacToe/TicTacBoardContainer';
 import StatusBarContainer from '../components/TicTacToe/StatusBarContainer';
 import ButtonContainer from '../components/TicTacToe/ButtonContainer';
 
