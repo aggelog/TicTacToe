@@ -2,14 +2,13 @@ import { createStore, applyMiddleware } from 'redux';
 import { syncHistoryWithStore, routerMiddleware } from 'react-router-redux';
 import { browserHistory } from 'react-router';
 import { Map } from 'immutable';
-import ReduxThunk from 'redux-thunk';
 import rootReducer from '../reducers';
 
 export default function configureStore(initialState = new Map()) {
     const routingMiddleware = routerMiddleware(browserHistory);
 
     // Middleware you want to use in production:
-    const enhancer = applyMiddleware(routingMiddleware, ReduxThunk);
+    const enhancer = applyMiddleware(routingMiddleware);
 
     // Note: only Redux >= 3.1.0 supports passing enhancer as third argument.
     // See https://github.com/rackt/redux/releases/tag/v3.1.0

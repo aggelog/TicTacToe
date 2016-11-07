@@ -2,7 +2,6 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { syncHistoryWithStore, routerMiddleware } from 'react-router-redux';
 import { browserHistory } from 'react-router';
 import { Map } from 'immutable';
-import ReduxThunk from 'redux-thunk';
 import reducer from '../reducers';
 import logger from '../middleware/logger';
 
@@ -10,7 +9,7 @@ export default function configureStore(initialState = new Map()) {
     const routingMiddleware = routerMiddleware(browserHistory);
 
     const finalCreateStore = compose(
-        applyMiddleware(routingMiddleware, logger, ReduxThunk),
+        applyMiddleware(routingMiddleware, logger),
         window.devToolsExtension ? window.devToolsExtension() : f => f
     )(createStore);
 
