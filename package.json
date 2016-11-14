@@ -15,10 +15,11 @@
     "start": "node run",
     "build": "node run build",
     "build:debug": "node run build --debug",
-    "cover": "nyc npm run test",
+    "coverage": "nyc ava --verbose",
     "check-coverage": "nyc check-coverage --statements 1 --branches 1 --functions 1 --lines 1",
+    "post-coverage": "nyc ava && nyc report --reporter=text-lcov | coveralls",
     "test": "ava --tap | tap-nyan",
-    "test:watch": "./node_modules/.bin/ava --watch",
+    "test:watch": "ava --watch",
     "cover:watch": "nodemon --quiet --watch test --exec nyc ava -s",
     "clean": "node run clean && rm -rf node_modules && rm -rf .nyc_output && rm -rf coverage"
   },
@@ -30,7 +31,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/aggelog/TicTacToe-HTML5-game.git"
   },
   "devDependencies": {
     "assets-webpack-plugin": "^3.4.0",

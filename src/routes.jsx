@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './components/App/App';
 import TicTacToe from './pages/TicTacToe';
-import NotFound from './pages/notFound';
+import NotFound from './pages/NotFound';
 
 // Define the application routes and assign for each one the related component.
 export default (
