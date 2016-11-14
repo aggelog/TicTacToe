@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Game
 
-[![CircleCI](https://circleci.com/gh/aggelog/TicTacToe-HTML5-game/tree/master.svg?style=shield)](https://circleci.com/gh/aggelog/TicTacToe-HTML5-game/tree/master)
+[![CircleCI](https://circleci.com/gh/aggelog/TicTacToe-HTML5-game/tree/master.svg?style=shield)](https://circleci.com/gh/aggelog/TicTacToe-HTML5-game/tree/master) [![Coverage Status](https://coveralls.io/repos/github/aggelog/TicTacToe-HTML5-game/badge.svg?branch=master)](https://coveralls.io/github/aggelog/TicTacToe-HTML5-game?branch=master)
 
 ![](TTT.png)
 
